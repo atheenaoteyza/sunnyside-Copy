@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    font-size: 18px;
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-rows: 800px 600px 600px 600px 780px 440px 400px;
+    grid-template-columns: 1fr;
+}
+
+.header{
+    background: url(images/desktop/image-header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  color: white;
+  grid-row: 1/2;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.header-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+    grid-row: 1/1;
+
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: white;
+    grid-row: 2/3;
+    margin: 0;
+    padding: 0;
+}
+.row-2-text{
+    grid-row: 1/6;
+    grid-column: 1/3;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: flex-start;
+   margin: 0 auto;
+   padding: 0;
+}
+h1.text{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    width: 418px;
+    
+    
+    
+}
+
+
+p{
+    max-width: 450px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: hsl(213, 9%, 39%);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    border: solid;
+    font-size: 18px;
+    
+}
+
+img.egg{
+    grid-row: 1/6;
+    grid-column: 4/5;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.row-3{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.img.pink{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+
+}
+.row-3-text{
+    grid-column: 2/4;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.row-4{
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.background-1{
+    grid-row: 1/6;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.row-4-first{
+    grid-row: 5/6;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: hsl(212, 27%, 19%);
+
+}
+
+.background-2{
+    grid-row: 1/6;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.row-4-second{
+grid-row: 5/6;
+display: flex;
+flex-flow: column wrap;
+justify-content: flex-end;
+align-items: center;
+text-align: center;
+color: hsl(212, 27%, 19%);
+
+
+}
+p.row-4{
+    
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: black;
+    display: block;
+    width: 380px;
+    color: hsl(198, 62%, 26%);
+}
+
+
+
+.row-6{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: black;
+    margin: 0;
+    padding: 0;
+}
+.milk, .orange, .cone, .mallows{
+    grid-row: 6/7;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+img{
+    
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
